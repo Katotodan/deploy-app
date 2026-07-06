@@ -8,7 +8,8 @@ app.get('/', (req, res) => {
     message: 'Deployment Demo',
     environment: ENV,
     version: process.env.npm_package_version || '1.0.0',
-    timestamp: new Date().toISOString()
+    timestamp: new Date().toISOString(),
+    port: PORT
   });
 });
 
